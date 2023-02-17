@@ -1,5 +1,5 @@
 import { client } from '../../../lib/contentful/client'
-import PostCard from '../../../components/PostCard'
+import PostCard from '../../../components/posts/PostCard'
 
 const Posts = ({ posts }) => {
   return (
