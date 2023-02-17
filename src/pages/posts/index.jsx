@@ -1,4 +1,3 @@
-import React from 'react'
 import { client } from '../../../lib/contentful/client'
 import PostCard from '../../../components/PostCard'
 
@@ -19,7 +18,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      posts: data.items,
+      posts: response.items,
       revalidate: 60
     }
   }
