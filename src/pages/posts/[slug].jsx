@@ -1,7 +1,6 @@
 import PostBody from '../../../components/posts/PostBody'
 import PostHeader from '../../../components/posts/PostHeader'
-import PreviewAlert from '../../../components/ui/PreviewAlert'
-// import Skeleton from '../../../components/ui/Skeleton'
+// import PreviewAlert from '../../../components/ui/PreviewAlert'
 import { client, previewClient } from '../../../lib/contentful/client'
 import { useRouter } from 'next/router'
 
@@ -10,7 +9,7 @@ const Post = ({ post, preview }) => {
 
   return (
     <section className='section'>
-      {preview && <PreviewAlert />}
+      {/* {preview && <PreviewAlert />} */}
       <div className='container'>
         <article className='prose mx-auto'>
           {

@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import Avatar from '../ui/Avatar'
-// import DateComponent from './ui/DateComponent'
 import ContentfulImage from '../ui/ContentfulImage'
 
 const PostCard = ({ post }) => {
-  const { title, slug, excerpt, image, author, date } = post.fields
+  const { title, slug, excerpt, image, author } = post.fields
 
   return (
     <li >
@@ -20,7 +19,6 @@ const PostCard = ({ post }) => {
         <div>
           <h3 >{title}</h3>
           <div>
-            {/* <DateComponent dateString={date} /> */}
           </div>
           <p >{excerpt}</p>
           <Avatar name={author.fields.name} picture={author.fields.picture} />

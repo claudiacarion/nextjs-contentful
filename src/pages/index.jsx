@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <h1 className='text-2xl'>home</h1>
+        <h1 className='text-2xl'>this is a practice project with nextjs and contentful.</h1>
       </div>
     </>
   )
