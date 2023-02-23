@@ -6,13 +6,13 @@ const PostCard = ({ post }) => {
   const { title, slug, excerpt, image, author } = post.fields
 
   return (
-    <li >
+    <li className=' my-5'>
       <Link href={`/posts/${slug}`} aria-label={title}>
         <div>
           <ContentfulImage
             alt={`Cover Image for ${title}`}
             src={image.fields.file.url}
-            width={100}
+            width={150}
             height={100}
           />
         </div>

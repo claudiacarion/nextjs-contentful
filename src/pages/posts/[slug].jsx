@@ -1,15 +1,13 @@
 import PostBody from '../../../components/posts/PostBody'
 import PostHeader from '../../../components/posts/PostHeader'
-// import PreviewAlert from '../../../components/ui/PreviewAlert'
 import { client, previewClient } from '../../../lib/contentful/client'
 import { useRouter } from 'next/router'
 
-const Post = ({ post, preview }) => {
+const Post = ({ post }) => {
   const router = useRouter()
 
   return (
     <section className='section'>
-      {/* {preview && <PreviewAlert />} */}
       <div className='container'>
         <article className='prose mx-auto'>
           {
